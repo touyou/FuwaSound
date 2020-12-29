@@ -9,12 +9,12 @@ import SwiftUI
 import AVFoundation
 
 struct ContentView: View {
-    let player = try! AVAudioPlayer(data: NSDataAsset(name: "fuwaSound")!.data)
+    let player = try! AVAudioPlayer(data: NSDataAsset(name: "haramiFuwa")!.data)
 
     var body: some View {
         ZStack {
             Color(red: 249 / 250.0, green: 248.0 / 250.0, blue: 0.0, opacity: 1.0).edgesIgnoringSafeArea(.all)
-            Image("fuwa")
+            Image("harami")
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             Button(action: {
                 player.play()
